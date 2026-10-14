@@ -3,6 +3,7 @@
 .env
 *.log
 !evidence/**/*.log
+!questions/**/evidence/*.log
 .idea/
 *.iml
 data/
