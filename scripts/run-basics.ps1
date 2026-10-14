@@ -27,7 +27,7 @@ $sources = @(
     }
 )
 if ($Main -eq 'BoundaryTests') {
-    $sources += @(Get-ChildItem -LiteralPath (Join-Path $repoRoot 'tests/basics') -Filter '*.java' | ForEach-Object { $_.FullName })
+    $sources += @(Get-ChildItem -LiteralPath (Join-Path $repoRoot 'tests/basics/src') -Filter '*.java' -Recurse | ForEach-Object { $_.FullName })
 }
 $compiler = if ($JavaHome) { Join-Path $JavaHome 'bin/javac.exe' } else { 'javac' }
 $runtime = if ($JavaHome) { Join-Path $JavaHome 'bin/java.exe' } else { 'java' }

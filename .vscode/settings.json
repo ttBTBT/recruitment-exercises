@@ -1,0 +1,16 @@
+{
+  "files.encoding": "utf8",
+  "files.exclude": { "**/target": true, "build": true },
+  "java.project.sourcePaths": [
+    "questions/question-01/src",
+    "questions/question-02/src",
+    "questions/question-03/src",
+    "questions/question-04/src",
+    "questions/question-05/src",
+    "questions/question-06/src",
+    "questions/question-07/src",
+    "questions/question-08/src",
+    "tests/basics/src"
+  ],
+  "java.project.outputPath": "build/vscode"
+}
