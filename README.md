@@ -2,19 +2,21 @@
 
 本仓库在main按题整理代码、截图和运行记录，完整要求、解题过程、面试准备、验证情况及邮件提交说明集中在 [总说明.md](总说明.md)。姓名、学号、年级待本人填写。
 
-| 题号 | 题目 |
-| --- | --- |
-| 1 | [环境搭建与Java程序](questions/question-01/README.md) |
-| 2 | [数据类型与运算符](questions/question-02/README.md) |
-| 3 | [控制流工具箱](questions/question-03/README.md) |
-| 4 | [面向对象与设计模式](questions/question-04/README.md) |
-| 5 | [异常处理支付网关](questions/question-05/README.md) |
-| 6 | [集合订单分析](questions/question-06/README.md) |
-| 7 | [文件分片与合并](questions/question-07/README.md) |
-| 8 | [线程同步奶茶店](questions/question-08/README.md) |
-| 9 | [MySQL图书商城查询](questions/question-09/README.md) |
-| 10 | [Spring Boot用户认证](questions/question-10/README.md) |
-| 11 | [线上活动报名系统](questions/question-11/README.md) |
+| 题号 | 答题过程与源码讲解 | 全部源文件 |
+| --- | --- | --- |
+| 1 | [环境搭建与Java程序](questions/question-01/README.md) | [code目录](questions/question-01/code/) |
+| 2 | [数据类型与运算符](questions/question-02/README.md) | [code目录](questions/question-02/code/) |
+| 3 | [控制流工具箱](questions/question-03/README.md) | [code目录](questions/question-03/code/) |
+| 4 | [面向对象与设计模式](questions/question-04/README.md) | [code目录](questions/question-04/code/) |
+| 5 | [异常处理支付网关](questions/question-05/README.md) | [code目录](questions/question-05/code/) |
+| 6 | [集合订单分析](questions/question-06/README.md) | [code目录](questions/question-06/code/) |
+| 7 | [文件分片与合并](questions/question-07/README.md) | [code目录](questions/question-07/code/) |
+| 8 | [线程同步奶茶店](questions/question-08/README.md) | [code目录](questions/question-08/code/) |
+| 9 | [MySQL图书商城查询](questions/question-09/README.md) | [code目录](questions/question-09/code/) |
+| 10 | [Spring Boot用户认证](questions/question-10/README.md) | [code目录](questions/question-10/code/) |
+| 11 | [线上活动报名系统](questions/question-11/README.md) | [code目录](questions/question-11/code/) |
+
+基础题1—8的每题README现在直接展示全部Java文件，第9题展示全部SQL；第10—11题展示关键源码与所有源文件的直接链接。总说明内也加入源码与逐步推演，便于对着代码学习。
 
 ## 构建与运行
 
