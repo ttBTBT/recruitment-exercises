@@ -19,5 +19,7 @@ SOURCE code/04-constraint-check.sql;
 
 ## 证据来源与完成状态
 
-第9题已原生MySQL复验通过，日志位于evidence。此日志不代表Web项目数据库集成完成。
+第9题已原生MySQL复验通过，日志位于evidence。截图为这份实际日志的页面展示，不是数据库工具或终端截图。此日志不代表Web项目数据库集成完成。
+
+![原生MySQL实际日志的页面展示](screenshots/mysql-q09-log.png)
 
