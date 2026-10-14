@@ -1,14 +1,14 @@
 # 第7题：文件分片与合并
 
-题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录code为本题可运行源码，screenshots为截图，evidence为原始记录。
+题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录src为唯一源码，screenshots为截图，evidence为本题记录。
 
 
-## 完整源码目录与文件
+## 源码目录与文件
 
-[打开本题全部代码](code/)；下面的链接直接打开源文件，不是截图。
+[打开源码目录](src)；下面的链接直接打开源文件，不是截图。
 
-- [FileChunker.java](code/src/openatom/basics/FileChunker.java)
-- [FileDemo.java](code/src/openatom/basics/FileDemo.java)
+- [FileChunker.java](src/openatom/basics/FileChunker.java)
+- [FileDemo.java](src/openatom/basics/FileDemo.java)
 
 ## 答题过程与代码讲解
 
@@ -22,9 +22,9 @@
 
 ## 本题完整Java源代码
 
-以下逐文件展示实际源码，与code目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
+以下逐文件展示实际源码，与源码目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
 
-### [FileChunker.java](code/src/openatom/basics/FileChunker.java)
+### [FileChunker.java](src/openatom/basics/FileChunker.java)
 
 ```java
 package openatom.basics;
@@ -121,7 +121,7 @@ public class FileChunker {
 }
 ```
 
-### [FileDemo.java](code/src/openatom/basics/FileDemo.java)
+### [FileDemo.java](src/openatom/basics/FileDemo.java)
 
 ```java
 package openatom.basics;
@@ -154,14 +154,14 @@ public class FileDemo {
 需要JDK17。在本题目录执行：
 
 ```powershell
-./code/run.ps1 -Main FileDemo
+../../scripts/run-basics.ps1 -Main FileDemo
 ```
 
 Linux/macOS可在本题目录执行：
 
 ```sh
 mkdir -p build/classes
-javac -encoding UTF-8 --release 17 -d build/classes code/src/openatom/basics/*.java
+javac -encoding UTF-8 --release 17 -d build/classes src/openatom/basics/*.java
 java -Dfile.encoding=UTF-8 -cp build/classes openatom.basics.FileDemo
 ```
 

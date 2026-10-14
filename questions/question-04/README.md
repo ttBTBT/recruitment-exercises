@@ -1,23 +1,23 @@
 # 第4题：面向对象与设计模式
 
-题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录code为本题可运行源码，screenshots为截图，evidence为原始记录。
+题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录src为唯一源码，screenshots为截图，evidence为本题记录。
 
 
-## 完整源码目录与文件
+## 源码目录与文件
 
-[打开本题全部代码](code/)；下面的链接直接打开源文件，不是截图。
+[打开源码目录](src)；下面的链接直接打开源文件，不是截图。
 
-- [Drone.java](code/src/openatom/basics/Drone.java)
-- [GPSLocatable.java](code/src/openatom/basics/GPSLocatable.java)
-- [LogisticsConfig.java](code/src/openatom/basics/LogisticsConfig.java)
-- [LogisticsOrder.java](code/src/openatom/basics/LogisticsOrder.java)
-- [MyArrayList.java](code/src/openatom/basics/MyArrayList.java)
-- [OopDemo.java](code/src/openatom/basics/OopDemo.java)
-- [Product.java](code/src/openatom/basics/Product.java)
-- [StorageBox.java](code/src/openatom/basics/StorageBox.java)
-- [TransportVehicle.java](code/src/openatom/basics/TransportVehicle.java)
-- [Truck.java](code/src/openatom/basics/Truck.java)
-- [VehicleFactory.java](code/src/openatom/basics/VehicleFactory.java)
+- [Drone.java](src/openatom/basics/Drone.java)
+- [GPSLocatable.java](src/openatom/basics/GPSLocatable.java)
+- [LogisticsConfig.java](src/openatom/basics/LogisticsConfig.java)
+- [LogisticsOrder.java](src/openatom/basics/LogisticsOrder.java)
+- [MyArrayList.java](src/openatom/basics/MyArrayList.java)
+- [OopDemo.java](src/openatom/basics/OopDemo.java)
+- [Product.java](src/openatom/basics/Product.java)
+- [StorageBox.java](src/openatom/basics/StorageBox.java)
+- [TransportVehicle.java](src/openatom/basics/TransportVehicle.java)
+- [Truck.java](src/openatom/basics/Truck.java)
+- [VehicleFactory.java](src/openatom/basics/VehicleFactory.java)
 
 ## 答题过程与代码讲解
 
@@ -33,9 +33,9 @@
 
 ## 本题完整Java源代码
 
-以下逐文件展示实际源码，与code目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
+以下逐文件展示实际源码，与源码目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
 
-### [Product.java](code/src/openatom/basics/Product.java)
+### [Product.java](src/openatom/basics/Product.java)
 
 ```java
 package openatom.basics;
@@ -71,14 +71,14 @@ public class Product {
 }
 ```
 
-### [GPSLocatable.java](code/src/openatom/basics/GPSLocatable.java)
+### [GPSLocatable.java](src/openatom/basics/GPSLocatable.java)
 
 ```java
 package openatom.basics;
 public interface GPSLocatable { String getLocation(); }
 ```
 
-### [TransportVehicle.java](code/src/openatom/basics/TransportVehicle.java)
+### [TransportVehicle.java](src/openatom/basics/TransportVehicle.java)
 
 ```java
 package openatom.basics;
@@ -96,7 +96,7 @@ public abstract class TransportVehicle {
 }
 ```
 
-### [Truck.java](code/src/openatom/basics/Truck.java)
+### [Truck.java](src/openatom/basics/Truck.java)
 
 ```java
 package openatom.basics;
@@ -108,7 +108,7 @@ public class Truck extends TransportVehicle implements GPSLocatable {
 }
 ```
 
-### [Drone.java](code/src/openatom/basics/Drone.java)
+### [Drone.java](src/openatom/basics/Drone.java)
 
 ```java
 package openatom.basics;
@@ -120,7 +120,7 @@ public class Drone extends TransportVehicle implements GPSLocatable {
 }
 ```
 
-### [StorageBox.java](code/src/openatom/basics/StorageBox.java)
+### [StorageBox.java](src/openatom/basics/StorageBox.java)
 
 ```java
 package openatom.basics;
@@ -131,7 +131,7 @@ public class StorageBox<T> {
 }
 ```
 
-### [MyArrayList.java](code/src/openatom/basics/MyArrayList.java)
+### [MyArrayList.java](src/openatom/basics/MyArrayList.java)
 
 ```java
 package openatom.basics;
@@ -170,7 +170,7 @@ public class MyArrayList<T> {
 }
 ```
 
-### [LogisticsConfig.java](code/src/openatom/basics/LogisticsConfig.java)
+### [LogisticsConfig.java](src/openatom/basics/LogisticsConfig.java)
 
 ```java
 package openatom.basics;
@@ -183,7 +183,7 @@ public final class LogisticsConfig {
 }
 ```
 
-### [VehicleFactory.java](code/src/openatom/basics/VehicleFactory.java)
+### [VehicleFactory.java](src/openatom/basics/VehicleFactory.java)
 
 ```java
 package openatom.basics;
@@ -197,7 +197,7 @@ public final class VehicleFactory {
 }
 ```
 
-### [LogisticsOrder.java](code/src/openatom/basics/LogisticsOrder.java)
+### [LogisticsOrder.java](src/openatom/basics/LogisticsOrder.java)
 
 ```java
 package openatom.basics;
@@ -237,7 +237,7 @@ public final class LogisticsOrder {
 }
 ```
 
-### [OopDemo.java](code/src/openatom/basics/OopDemo.java)
+### [OopDemo.java](src/openatom/basics/OopDemo.java)
 
 ```java
 package openatom.basics;
@@ -301,7 +301,7 @@ public class OopDemo {
 需要JDK17。在本题目录执行：
 
 ```powershell
-./code/run.ps1 -Main OopDemo
+../../scripts/run-basics.ps1 -Main OopDemo
 ```
 
 分子题运行可另加 `-ProgramArgs 4.1`，依次替换为4.2—4.5。
@@ -310,7 +310,7 @@ Linux/macOS可在本题目录执行：
 
 ```sh
 mkdir -p build/classes
-javac -encoding UTF-8 --release 17 -d build/classes code/src/openatom/basics/*.java
+javac -encoding UTF-8 --release 17 -d build/classes src/openatom/basics/*.java
 java -Dfile.encoding=UTF-8 -cp build/classes openatom.basics.OopDemo
 ```
 

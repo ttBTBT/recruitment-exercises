@@ -1,16 +1,16 @@
 # 第8题：线程同步奶茶店
 
-题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录code为本题可运行源码，screenshots为截图，evidence为原始记录。
+题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录src为唯一源码，screenshots为截图，evidence为本题记录。
 
 
-## 完整源码目录与文件
+## 源码目录与文件
 
-[打开本题全部代码](code/)；下面的链接直接打开源文件，不是截图。
+[打开源码目录](src)；下面的链接直接打开源文件，不是截图。
 
-- [TeaCounter.java](code/src/openatom/basics/TeaCounter.java)
-- [TeaCustomer.java](code/src/openatom/basics/TeaCustomer.java)
-- [TeaDemo.java](code/src/openatom/basics/TeaDemo.java)
-- [TeaEmployee.java](code/src/openatom/basics/TeaEmployee.java)
+- [TeaCounter.java](src/openatom/basics/TeaCounter.java)
+- [TeaCustomer.java](src/openatom/basics/TeaCustomer.java)
+- [TeaDemo.java](src/openatom/basics/TeaDemo.java)
+- [TeaEmployee.java](src/openatom/basics/TeaEmployee.java)
 
 ## 答题过程与代码讲解
 
@@ -24,9 +24,9 @@
 
 ## 本题完整Java源代码
 
-以下逐文件展示实际源码，与code目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
+以下逐文件展示实际源码，与源码目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
 
-### [TeaCounter.java](code/src/openatom/basics/TeaCounter.java)
+### [TeaCounter.java](src/openatom/basics/TeaCounter.java)
 
 ```java
 package openatom.basics;
@@ -58,7 +58,7 @@ public class TeaCounter {
 }
 ```
 
-### [TeaEmployee.java](code/src/openatom/basics/TeaEmployee.java)
+### [TeaEmployee.java](src/openatom/basics/TeaEmployee.java)
 
 ```java
 package openatom.basics;
@@ -80,7 +80,7 @@ public class TeaEmployee implements Runnable {
 }
 ```
 
-### [TeaCustomer.java](code/src/openatom/basics/TeaCustomer.java)
+### [TeaCustomer.java](src/openatom/basics/TeaCustomer.java)
 
 ```java
 package openatom.basics;
@@ -102,7 +102,7 @@ public class TeaCustomer implements Runnable {
 }
 ```
 
-### [TeaDemo.java](code/src/openatom/basics/TeaDemo.java)
+### [TeaDemo.java](src/openatom/basics/TeaDemo.java)
 
 ```java
 package openatom.basics;
@@ -135,14 +135,14 @@ public class TeaDemo {
 需要JDK17。在本题目录执行：
 
 ```powershell
-./code/run.ps1 -Main TeaDemo
+../../scripts/run-basics.ps1 -Main TeaDemo
 ```
 
 Linux/macOS可在本题目录执行：
 
 ```sh
 mkdir -p build/classes
-javac -encoding UTF-8 --release 17 -d build/classes code/src/openatom/basics/*.java
+javac -encoding UTF-8 --release 17 -d build/classes src/openatom/basics/*.java
 java -Dfile.encoding=UTF-8 -cp build/classes openatom.basics.TeaDemo
 ```
 

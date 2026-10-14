@@ -1,15 +1,15 @@
 # 第6题：集合订单分析
 
-题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录code为本题可运行源码，screenshots为截图，evidence为原始记录。
+题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录src为唯一源码，screenshots为截图，evidence为本题记录。
 
 
-## 完整源码目录与文件
+## 源码目录与文件
 
-[打开本题全部代码](code/)；下面的链接直接打开源文件，不是截图。
+[打开源码目录](src)；下面的链接直接打开源文件，不是截图。
 
-- [Order.java](code/src/openatom/basics/Order.java)
-- [OrderAnalyzer.java](code/src/openatom/basics/OrderAnalyzer.java)
-- [OrderDemo.java](code/src/openatom/basics/OrderDemo.java)
+- [Order.java](src/openatom/basics/Order.java)
+- [OrderAnalyzer.java](src/openatom/basics/OrderAnalyzer.java)
+- [OrderDemo.java](src/openatom/basics/OrderDemo.java)
 
 ## 答题过程与代码讲解
 
@@ -21,9 +21,9 @@
 
 ## 本题完整Java源代码
 
-以下逐文件展示实际源码，与code目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
+以下逐文件展示实际源码，与源码目录保持一致。每个文件应保持独立，不能把所有public类粘贴到同一个.java里。
 
-### [Order.java](code/src/openatom/basics/Order.java)
+### [Order.java](src/openatom/basics/Order.java)
 
 ```java
 package openatom.basics;
@@ -49,7 +49,7 @@ public final class Order implements Comparable<Order> {
 }
 ```
 
-### [OrderAnalyzer.java](code/src/openatom/basics/OrderAnalyzer.java)
+### [OrderAnalyzer.java](src/openatom/basics/OrderAnalyzer.java)
 
 ```java
 package openatom.basics;
@@ -78,7 +78,7 @@ public class OrderAnalyzer {
 }
 ```
 
-### [OrderDemo.java](code/src/openatom/basics/OrderDemo.java)
+### [OrderDemo.java](src/openatom/basics/OrderDemo.java)
 
 ```java
 package openatom.basics;
@@ -111,14 +111,14 @@ public class OrderDemo {
 需要JDK17。在本题目录执行：
 
 ```powershell
-./code/run.ps1 -Main OrderDemo
+../../scripts/run-basics.ps1 -Main OrderDemo
 ```
 
 Linux/macOS可在本题目录执行：
 
 ```sh
 mkdir -p build/classes
-javac -encoding UTF-8 --release 17 -d build/classes code/src/openatom/basics/*.java
+javac -encoding UTF-8 --release 17 -d build/classes src/openatom/basics/*.java
 java -Dfile.encoding=UTF-8 -cp build/classes openatom.basics.OrderDemo
 ```
 

@@ -1,16 +1,16 @@
 # 第9题：MySQL图书商城查询
 
-题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录code为本题可运行源码，screenshots为截图，evidence为原始记录。
+题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录sql为唯一SQL源码，screenshots为截图，evidence为运行记录。
 
 
-## 完整源码目录与文件
+## 源码目录与文件
 
-[打开本题全部代码](code/)；下面的链接直接打开源文件，不是截图。
+[打开源码目录](sql)；下面的链接直接打开源文件，不是截图。
 
-- [01-schema.sql](code/01-schema.sql)
-- [02-seed.sql](code/02-seed.sql)
-- [03-queries.sql](code/03-queries.sql)
-- [04-constraint-check.sql](code/04-constraint-check.sql)
+- [01-schema.sql](sql/01-schema.sql)
+- [02-seed.sql](sql/02-seed.sql)
+- [03-queries.sql](sql/03-queries.sql)
+- [04-constraint-check.sql](sql/04-constraint-check.sql)
 
 ## 答题过程与代码讲解
 
@@ -25,7 +25,7 @@
 ## 本题完整SQL
 
 
-### [01-schema.sql](code/01-schema.sql)
+### [01-schema.sql](sql/01-schema.sql)
 
 ```sql
 -- MySQL 8.0.16+; use a fresh exercise database. No DROP statements.
@@ -63,7 +63,7 @@ CREATE TABLE order_items (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-### [02-seed.sql](code/02-seed.sql)
+### [02-seed.sql](sql/02-seed.sql)
 
 ```sql
 -- Run once after 01-schema.sql in a fresh exercise database.
@@ -92,7 +92,7 @@ INSERT INTO order_items (order_id, book_id, quantity, buy_price) VALUES
 COMMIT;
 ```
 
-### [03-queries.sql](code/03-queries.sql)
+### [03-queries.sql](sql/03-queries.sql)
 
 ```sql
 -- Task 2: quantity counts copies, not distinct titles or order rows.
@@ -120,7 +120,7 @@ JOIN (
 ORDER BY b.category, b.title;
 ```
 
-### [04-constraint-check.sql](code/04-constraint-check.sql)
+### [04-constraint-check.sql](sql/04-constraint-check.sql)
 
 ```sql
 -- Execute this file separately. The INSERT MUST fail (CHECK violation).
@@ -136,10 +136,10 @@ VALUES (1, 1, 0, 70.00);
 ```sql
 CREATE DATABASE openatom_q09 CHARACTER SET utf8mb4;
 USE openatom_q09;
-SOURCE code/01-schema.sql;
-SOURCE code/02-seed.sql;
-SOURCE code/03-queries.sql;
-SOURCE code/04-constraint-check.sql;
+SOURCE sql/01-schema.sql;
+SOURCE sql/02-seed.sql;
+SOURCE sql/03-queries.sql;
+SOURCE sql/04-constraint-check.sql;
 ```
 
 最后一份quantity=0应被拒绝。已真实执行结果见evidence/mysql-q09.txt：Alice3本270元、Bob3本210元，最高价保留Tech两本并列120元。

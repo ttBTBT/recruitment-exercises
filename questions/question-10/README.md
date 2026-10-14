@@ -1,34 +1,34 @@
 # 第10题：Spring Boot用户认证
 
-题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本目录code为本题可运行源码，screenshots为截图，evidence为原始记录。
+题目要求、完整解题过程与面试追问见 [总说明](../../总说明.md)。本题与第11题共用一份 [Web源码](../../shared/web/)，截图与记录链接到仓库evidence。
 
 
-## 完整源码目录与文件
+## 源码目录与文件
 
-[打开本题全部代码](code/)；下面的链接直接打开源文件，不是截图。
+[打开源码目录](../../shared/web)；下面的链接直接打开源文件，不是截图。
 
-- [ApiResponse.java](code/web/src/main/java/cn/openatom/events/ApiResponse.java)
-- [AuthController.java](code/web/src/main/java/cn/openatom/events/AuthController.java)
-- [AuthService.java](code/web/src/main/java/cn/openatom/events/AuthService.java)
-- [BusinessException.java](code/web/src/main/java/cn/openatom/events/BusinessException.java)
-- [CacheConfig.java](code/web/src/main/java/cn/openatom/events/CacheConfig.java)
-- [Event.java](code/web/src/main/java/cn/openatom/events/Event.java)
-- [EventApplication.java](code/web/src/main/java/cn/openatom/events/EventApplication.java)
-- [EventCacheKey.java](code/web/src/main/java/cn/openatom/events/EventCacheKey.java)
-- [EventController.java](code/web/src/main/java/cn/openatom/events/EventController.java)
-- [EventListsChanged.java](code/web/src/main/java/cn/openatom/events/EventListsChanged.java)
-- [EventNotFoundException.java](code/web/src/main/java/cn/openatom/events/EventNotFoundException.java)
-- [EventRepository.java](code/web/src/main/java/cn/openatom/events/EventRepository.java)
-- [EventService.java](code/web/src/main/java/cn/openatom/events/EventService.java)
-- [GlobalExceptionHandler.java](code/web/src/main/java/cn/openatom/events/GlobalExceptionHandler.java)
-- [Registration.java](code/web/src/main/java/cn/openatom/events/Registration.java)
-- [RegistrationRepository.java](code/web/src/main/java/cn/openatom/events/RegistrationRepository.java)
-- [SecurityConfig.java](code/web/src/main/java/cn/openatom/events/SecurityConfig.java)
-- [UnauthorizedAccessException.java](code/web/src/main/java/cn/openatom/events/UnauthorizedAccessException.java)
-- [User.java](code/web/src/main/java/cn/openatom/events/User.java)
-- [UserRepository.java](code/web/src/main/java/cn/openatom/events/UserRepository.java)
-- [BrowserWorkflowTest.java](code/web/src/test/java/cn/openatom/events/BrowserWorkflowTest.java)
-- [EventPlatformTest.java](code/web/src/test/java/cn/openatom/events/EventPlatformTest.java)
+- [ApiResponse.java](../../shared/web/src/main/java/cn/openatom/events/ApiResponse.java)
+- [AuthController.java](../../shared/web/src/main/java/cn/openatom/events/AuthController.java)
+- [AuthService.java](../../shared/web/src/main/java/cn/openatom/events/AuthService.java)
+- [BusinessException.java](../../shared/web/src/main/java/cn/openatom/events/BusinessException.java)
+- [CacheConfig.java](../../shared/web/src/main/java/cn/openatom/events/CacheConfig.java)
+- [Event.java](../../shared/web/src/main/java/cn/openatom/events/Event.java)
+- [EventApplication.java](../../shared/web/src/main/java/cn/openatom/events/EventApplication.java)
+- [EventCacheKey.java](../../shared/web/src/main/java/cn/openatom/events/EventCacheKey.java)
+- [EventController.java](../../shared/web/src/main/java/cn/openatom/events/EventController.java)
+- [EventListsChanged.java](../../shared/web/src/main/java/cn/openatom/events/EventListsChanged.java)
+- [EventNotFoundException.java](../../shared/web/src/main/java/cn/openatom/events/EventNotFoundException.java)
+- [EventRepository.java](../../shared/web/src/main/java/cn/openatom/events/EventRepository.java)
+- [EventService.java](../../shared/web/src/main/java/cn/openatom/events/EventService.java)
+- [GlobalExceptionHandler.java](../../shared/web/src/main/java/cn/openatom/events/GlobalExceptionHandler.java)
+- [Registration.java](../../shared/web/src/main/java/cn/openatom/events/Registration.java)
+- [RegistrationRepository.java](../../shared/web/src/main/java/cn/openatom/events/RegistrationRepository.java)
+- [SecurityConfig.java](../../shared/web/src/main/java/cn/openatom/events/SecurityConfig.java)
+- [UnauthorizedAccessException.java](../../shared/web/src/main/java/cn/openatom/events/UnauthorizedAccessException.java)
+- [User.java](../../shared/web/src/main/java/cn/openatom/events/User.java)
+- [UserRepository.java](../../shared/web/src/main/java/cn/openatom/events/UserRepository.java)
+- [BrowserWorkflowTest.java](../../shared/web/src/test/java/cn/openatom/events/BrowserWorkflowTest.java)
+- [EventPlatformTest.java](../../shared/web/src/test/java/cn/openatom/events/EventPlatformTest.java)
 
 ## 答题过程与代码讲解
 
@@ -47,7 +47,7 @@
 
 以下展示当前仓库的真实代码。完整文件可直接点击文件名；类内片段依赖所属类的字段、imports及其他方法，不能单独编译。
 
-#### [User.java](code/web/src/main/java/cn/openatom/events/User.java)（完整文件）
+#### [User.java](../../shared/web/src/main/java/cn/openatom/events/User.java)（完整文件）
 
 ```java
 package cn.openatom.events;
@@ -73,7 +73,7 @@ public class User {
 }
 ```
 
-#### [AuthController.java](code/web/src/main/java/cn/openatom/events/AuthController.java)（完整文件）
+#### [AuthController.java](../../shared/web/src/main/java/cn/openatom/events/AuthController.java)（完整文件）
 
 ```java
 package cn.openatom.events;
@@ -104,7 +104,7 @@ public class AuthController {
 }
 ```
 
-#### [AuthService.java](code/web/src/main/java/cn/openatom/events/AuthService.java)（完整文件）
+#### [AuthService.java](../../shared/web/src/main/java/cn/openatom/events/AuthService.java)（完整文件）
 
 ```java
 package cn.openatom.events;
@@ -153,7 +153,7 @@ public class AuthService {
 }
 ```
 
-#### [SecurityConfig.java](code/web/src/main/java/cn/openatom/events/SecurityConfig.java)（完整文件）
+#### [SecurityConfig.java](../../shared/web/src/main/java/cn/openatom/events/SecurityConfig.java)（完整文件）
 
 ```java
 package cn.openatom.events;
@@ -216,28 +216,28 @@ public class SecurityConfig {
 
 ## 运行
 
-JDK17+Maven；在本题目录执行：
+JDK17+Maven。在仓库根目录运行同一份项目：
 
 ```sh
-mvn -f code/web/pom.xml verify
-mvn -f code/web/pom.xml spring-boot:run
+mvn -f shared/web/pom.xml verify
+mvn -f shared/web/pom.xml spring-boot:run
 ```
 
-浏览器访问 http://localhost:8080 。默认H2+Caffeine，真实MySQL+Redis部署步骤见 [Web说明](code/web/README.md)，Compose应在code目录运行。第10、11题共享模块，均保留完整项目以保证运行；本题重点分别是认证/活动报名。
+浏览器访问 http://localhost:8080 。默认H2+Caffeine。完整MySQL+Redis配置见 [Web运行说明](../../shared/web/README.md)；Compose在仓库根目录执行。第10题重点是认证，第11题重点是活动与报名；两题共用代码，不重复存放。
 
 ## 证据来源与完成状态
 
 旧Web截图来自真实Spring MockMvc浏览器流程，不是Docker截图；六组集成测试和14项真实HTTP检查通过，但测试使用H2+Caffeine。Web MySQL+Redis、Docker实际运行证据待补。
 
-![已保存运行证据，来源如上](screenshots/01-guest.png)
+![已保存运行证据，来源如上](../../evidence/screenshots/web/01-guest.png)
 
-![已保存运行证据，来源如上](screenshots/02-login.png)
+![已保存运行证据，来源如上](../../evidence/screenshots/web/02-login.png)
 
-![已保存运行证据，来源如上](screenshots/03-created.png)
+![已保存运行证据，来源如上](../../evidence/screenshots/web/03-created.png)
 
-![已保存运行证据，来源如上](screenshots/04-registered.png)
+![已保存运行证据，来源如上](../../evidence/screenshots/web/04-registered.png)
 
-![已保存运行证据，来源如上](screenshots/05-cancelled.png)
+![已保存运行证据，来源如上](../../evidence/screenshots/web/05-cancelled.png)
 
-![已保存运行证据，来源如上](screenshots/06-mobile.png)
+![已保存运行证据，来源如上](../../evidence/screenshots/web/06-mobile.png)
 
