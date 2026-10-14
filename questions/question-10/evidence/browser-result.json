@@ -1,0 +1,17 @@
+{
+  "transport": "Playwright browser -> stdio -> real Spring MockMvc/security/JPA; no TCP due sandbox",
+  "checks": [
+    "guest list",
+    "register",
+    "login",
+    "create",
+    "detail",
+    "register event",
+    "token resume after reload",
+    "edit",
+    "cancel",
+    "mobile layout",
+    "no JS errors"
+  ],
+  "passed": true
+}

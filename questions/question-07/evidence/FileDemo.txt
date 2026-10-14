@@ -1,0 +1,6 @@
+测试目录：C:\Users\zbtbu\Documents\Codex\2026-10-04\2026-x20-x20-x20-https-ccniqjt4u9w0\outputs\openatom-backend\basics\build\temp\openatom-file-demo-4930915502131980709
+分片数：13（验证part2在part10之前）
+逐字节一致：true
+源文件SHA-256：198b785067d2cdee032d3995c75c083fbf16d79dd3649d40972df677a57085eb
+合并SHA-256：198b785067d2cdee032d3995c75c083fbf16d79dd3649d40972df677a57085eb
+合并后分片已删除：true

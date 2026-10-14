@@ -1,0 +1,99 @@
+Access is denied.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< cn.openatom:event-platform >---------------------
+[INFO] Building event-platform 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ event-platform ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ event-platform ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 20 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ event-platform ---
+[INFO] Copying 2 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ event-platform ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] /C:/Users/zbtbu/Documents/Codex/2026-10-04/2026-x20-x20-x20-https-ccniqjt4u9w0/outputs/recruitment-exercises/web/src/test/java/cn/openatom/events/BrowserWorkflowTest.java: C:\Users\zbtbu\Documents\Codex\2026-10-04\2026-x20-x20-x20-https-ccniqjt4u9w0\outputs\recruitment-exercises\web\src\test\java\cn\openatom\events\BrowserWorkflowTest.javaʹ�û򸲸����ѹ�ʱ�� API��
+[INFO] /C:/Users/zbtbu/Documents/Codex/2026-10-04/2026-x20-x20-x20-https-ccniqjt4u9w0/outputs/recruitment-exercises/web/src/test/java/cn/openatom/events/BrowserWorkflowTest.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ event-platform ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running cn.openatom.events.BrowserWorkflowTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.006 s -- in cn.openatom.events.BrowserWorkflowTest
+[INFO] Running cn.openatom.events.EventPlatformTest
+20:14:43.200 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [cn.openatom.events.EventPlatformTest]: EventPlatformTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:14:43.651 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration cn.openatom.events.EventApplication for test class cn.openatom.events.EventPlatformTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-10-05T20:14:44.493+08:00  INFO 98000 --- [           main] cn.openatom.events.EventPlatformTest     : Starting EventPlatformTest using Java 17.0.20.1 with PID 98000 (started by zbtbu in C:\Users\zbtbu\Documents\Codex\2026-10-04\2026-x20-x20-x20-https-ccniqjt4u9w0\outputs\recruitment-exercises\web)
+2026-10-05T20:14:44.496+08:00  INFO 98000 --- [           main] cn.openatom.events.EventPlatformTest     : No active profile set, falling back to 1 default profile: "demo"
+2026-10-05T20:14:45.970+08:00  INFO 98000 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-05T20:14:45.975+08:00  INFO 98000 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T20:14:46.267+08:00  INFO 98000 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 271 ms. Found 3 JPA repository interfaces.
+2026-10-05T20:14:46.294+08:00  INFO 98000 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-05T20:14:46.296+08:00  INFO 98000 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-05T20:14:46.334+08:00  INFO 98000 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.openatom.events.EventRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-05T20:14:46.334+08:00  INFO 98000 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.openatom.events.RegistrationRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-05T20:14:46.334+08:00  INFO 98000 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface cn.openatom.events.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-10-05T20:14:46.336+08:00  INFO 98000 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-10-05T20:14:47.830+08:00  INFO 98000 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-05T20:14:47.975+08:00  INFO 98000 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-10-05T20:14:48.056+08:00  INFO 98000 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-05T20:14:48.779+08:00  INFO 98000 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T20:14:48.845+08:00  INFO 98000 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T20:14:49.157+08:00  INFO 98000 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:events user=SA
+2026-10-05T20:14:49.160+08:00  INFO 98000 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T20:14:49.264+08:00  INFO 98000 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-05T20:14:50.682+08:00  INFO 98000 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T20:14:50.769+08:00  INFO 98000 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T20:14:52.096+08:00  INFO 98000 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-05T20:14:53.831+08:00  INFO 98000 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-10-05T20:14:56.533+08:00  INFO 98000 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-05T20:14:56.535+08:00  INFO 98000 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-05T20:14:56.539+08:00  INFO 98000 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-10-05T20:14:56.640+08:00  INFO 98000 --- [           main] cn.openatom.events.EventPlatformTest     : Started EventPlatformTest in 12.714 seconds (process running for 14.889)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.78 s -- in cn.openatom.events.EventPlatformTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 7, Failures: 0, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ event-platform ---
+[INFO] Building jar: C:\Users\zbtbu\Documents\Codex\2026-10-04\2026-x20-x20-x20-https-ccniqjt4u9w0\outputs\recruitment-exercises\web\target\event-platform-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.7:repackage (repackage) @ event-platform ---
+[INFO] Replacing main artifact C:\Users\zbtbu\Documents\Codex\2026-10-04\2026-x20-x20-x20-https-ccniqjt4u9w0\outputs\recruitment-exercises\web\target\event-platform-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\zbtbu\Documents\Codex\2026-10-04\2026-x20-x20-x20-https-ccniqjt4u9w0\outputs\recruitment-exercises\web\target\event-platform-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  42.839 s
+[INFO] Finished at: 2026-10-05T20:15:05+08:00
+[INFO] ------------------------------------------------------------------------

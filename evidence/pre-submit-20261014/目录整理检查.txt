@@ -1,0 +1,10 @@
+question-01: independent javac compilation PASS; source matches combined basics
+question-02: independent javac compilation PASS; source matches combined basics
+question-03: independent javac compilation PASS; source matches combined basics
+question-04: independent javac compilation PASS; source matches combined basics
+question-05: independent javac compilation PASS; source matches combined basics
+question-06: independent javac compilation PASS; source matches combined basics
+question-07: independent javac compilation PASS; source matches combined basics
+question-08: independent javac compilation PASS; source matches combined basics
+question-10/11: all Web source/config/test bytes match the verified canonical project
+11 question folders present; no code behavior changed.

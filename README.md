@@ -1,29 +1,36 @@
-# 2026开放原子后端招新题
+# 2026开放原子后端招新答案
 
-已逐一检查原11个分支并与本次PDF要求对比，择优记录见 [对比报告](docs/仓库对比与选入记录.md)。原第1题为未填写C模板，第2-11题只有README介绍；现补入完整Java后端实现，保留已有提交历史。
+本仓库在main按题整理代码、截图和运行记录，完整要求、解题过程、面试准备、验证情况及邮件提交说明集中在 [总说明.md](总说明.md)。姓名、学号、年级待本人填写。
 
-## 查看答案
-
-| 题号 | 分支与答案 |
+| 题号 | 题目 |
 | --- | --- |
-| 1 | [环境搭建与Java程序](https://github.com/ttBTBT/recruitment-exercises/tree/question-01) |
-| 2 | [数据类型与运算符](https://github.com/ttBTBT/recruitment-exercises/tree/question-02) |
-| 3 | [控制流工具箱](https://github.com/ttBTBT/recruitment-exercises/tree/question-03) |
-| 4 | [面向对象与设计模式](https://github.com/ttBTBT/recruitment-exercises/tree/question-04) |
-| 5 | [异常处理支付网关](https://github.com/ttBTBT/recruitment-exercises/tree/question-05) |
-| 6 | [集合订单分析](https://github.com/ttBTBT/recruitment-exercises/tree/question-06) |
-| 7 | [文件分片与合并](https://github.com/ttBTBT/recruitment-exercises/tree/question-07) |
-| 8 | [线程同步奶茶店](https://github.com/ttBTBT/recruitment-exercises/tree/question-08) |
-| 9 | [MySQL图书商城查询](https://github.com/ttBTBT/recruitment-exercises/tree/question-09) |
-| 10 | [Spring Boot用户认证](https://github.com/ttBTBT/recruitment-exercises/tree/question-10) |
-| 11 | [线上活动报名系统](https://github.com/ttBTBT/recruitment-exercises/tree/question-11) |
+| 1 | [环境搭建与Java程序](questions/question-01/README.md) |
+| 2 | [数据类型与运算符](questions/question-02/README.md) |
+| 3 | [控制流工具箱](questions/question-03/README.md) |
+| 4 | [面向对象与设计模式](questions/question-04/README.md) |
+| 5 | [异常处理支付网关](questions/question-05/README.md) |
+| 6 | [集合订单分析](questions/question-06/README.md) |
+| 7 | [文件分片与合并](questions/question-07/README.md) |
+| 8 | [线程同步奶茶店](questions/question-08/README.md) |
+| 9 | [MySQL图书商城查询](questions/question-09/README.md) |
+| 10 | [Spring Boot用户认证](questions/question-10/README.md) |
+| 11 | [线上活动报名系统](questions/question-11/README.md) |
 
-[完整可构建项目及全部运行证据](https://github.com/ttBTBT/recruitment-exercises/tree/complete-solutions) · [提交要求对照](docs/题目对照与提交指南.md) · [原仓库使用指南](使用指南.md)
+## 构建与运行
 
-## 验证状态
+需要JDK17；Web还需Maven。根目录basics/web用于整体构建，各题code用于单题查看与运行。
 
-187项Java基础检查、六组Spring Boot集成测试、浏览器真实后端流程通过。基础图是保存日志的浏览器展示，Web请求经真实MockMvc处理；不是IDE或容器截图。MySQL/Redis集成、Docker运行、个人系统环境与IDE截图尚待补。详情见[验证报告](https://github.com/ttBTBT/recruitment-exercises/blob/complete-solutions/evidence/验证报告.md)。
+```powershell
+./basics/run.ps1 -Main HelloWorld
+./basics/run.ps1 -Main BoundaryTests
+mvn -f web/pom.xml verify
+mvn -f web/pom.xml spring-boot:run
+```
 
-主分支继续只放说明；question-01至question-11一题一分支；complete-solutions整合完整项目便于运行共享模块。仓库只发布源码与证据，不包含便携Java或已编译jar。从GitHub下载后需JDK17与Maven。邮件未发送；姓名学号待本人填写。
+Web启动后访问 http://localhost:8080 。默认H2+Caffeine是演示；MySQL+Redis/Docker步骤见 [web运行说明](web/README.md)。第9题MySQL运行说明见 [第9题](questions/question-09/README.md)。
 
-开发过程有Codex协助，保留[开源参考记录](docs/github-references.md)，请理解、运行并能解释自己的提交。
+## 实际验证与待补
+
+2026年10月14日：187项基础检查、六组API集成测试、第9题原生MySQL和14项真实HTTP检查通过。可选浏览器测试本次跳过，旧浏览器证据另保留。第1题个人环境/IDE截图、Web MySQL+Redis集成、Docker实际启动仍待补；邮件未发送，报名由本人完成。日志在 [最新复验报告](evidence/pre-submit-20261014/复验报告.md)。
+
+基础截图是实际运行日志的浏览器展示，Web旧截图经真实Spring MockMvc处理；不冒充IDE或Docker证明。每题README注明截图来源。Codex协助实现、测试与整理，参考来源集中在总说明。

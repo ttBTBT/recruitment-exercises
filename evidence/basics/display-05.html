@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>题 5 · 异常与异常处理</title><style>body{margin:0;background:#f0f3f8;color:#1f2937;font:16px "Microsoft YaHei",sans-serif}.page{max-width:1060px;margin:28px auto;padding:26px 32px;background:white;border:1px solid #d6dde8;border-radius:12px}h1{font-size:26px;margin:0 0 16px}.notice{padding:12px 16px;background:#fff4d6;border-left:4px solid #d39816;font-weight:bold}.meta{font-size:14px;color:#566074;line-height:1.65}pre{padding:20px;background:#101a2c;color:#e5efff;border-radius:8px;font:15px/1.7 Consolas,"Microsoft YaHei",monospace;white-space:pre-wrap;overflow-wrap:anywhere}.links a{margin-right:10px;font-size:14px}</style><body><main class="page"><h1>题 5 · 异常与异常处理</h1><div class="notice">实际运行日志的浏览器展示，不是IDE截图</div><p class="meta">以下内容逐字来自本目录的实际运行记录 PaymentDemo.txt。<br>环境：Windows · Zulu OpenJDK 17.0.20.1 · UTF-8</p><pre>=== 测试金额：-1.0 ===
+执行资源清理任务...
+调用方捕获：支付请求处理失败，原始原因：支付金额不能为负数
+=== 测试金额：10001.0 ===
+余额不足，流水号为[TX-2]
+执行资源清理任务...
+支付结果：false
+=== 测试金额：500.0 ===
+发生未知异常:网络连接超时
+底层原因：NullPointerException
+执行资源清理任务...
+支付结果：false
+=== 测试金额：99.0 ===
+交易[TX-4]支付成功，金额：[99.0]
+执行资源清理任务...
+支付结果：true
+</pre><p class="meta">真实运行记录可用于复核。题 1 的个人IDE安装与环境变量配置截图仍需本人完成。</p><nav class="links"><a href="display-01.html">题 1 · 环境与多类协同</a> <a href="display-02.html">题 2 · 数据类型与运算符</a> <a href="display-03.html">题 3 · 多功能工具箱</a> <a href="display-04-1.html">题 4.1 · 封装、构造与静态成员</a> <a href="display-04-2.html">题 4.2 · 继承、抽象类与接口</a> <a href="display-04-3.html">题 4.3 · 泛型储物箱</a> <a href="display-04-4.html">题 4.4 · 手写动态数组</a> <a href="display-04-5.html">题 4.5 · 经典设计模式</a> <a href="display-05.html">题 5 · 异常与异常处理</a> <a href="display-06.html">题 6 · 电商订单集合分析</a> <a href="display-07.html">题 7 · 文件分片与合并</a> <a href="display-08.html">题 8 · 线程同步</a> <a href="display-tests.html">基础题 · 187 项边界检查</a></nav></main></body></html>

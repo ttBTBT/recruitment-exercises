@@ -1,0 +1,18 @@
+MySQL 8.4.11 actual execution, local isolated exercise database: openatom_review_2ce6814bc8
+username	total_tech_books	total_spent
+Alice	3	270.00
+Bob	3	210.00
+category	title	price
+History	World History	90.00
+Literature	Poems	50.00
+Tech	Database Design	120.00
+Tech	Distributed Systems	120.00
+
+quantity=0 rejected:
+ERROR 3819 (HY000) at line 3: Check constraint 'chk_item_quantity' is violated.
+
+Row count after rejection:
+COUNT(*)
+7
+
+Historical spend unaffected by catalog price update: PASS

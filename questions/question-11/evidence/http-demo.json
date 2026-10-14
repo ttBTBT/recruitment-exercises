@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-14",
+  "environment": "Real TCP HTTP, H2+Caffeine (not MySQL/Redis)",
+  "checks": [
+    {
+      "check": "Real HTML page reachable",
+      "http": 200,
+      "message": "查询成功"
+    },
+    {
+      "check": "owner registration",
+      "http": 200,
+      "message": "注册成功"
+    },
+    {
+      "check": "owner password login",
+      "http": 200,
+      "message": "登录成功"
+    },
+    {
+      "check": "guest registration",
+      "http": 200,
+      "message": "注册成功"
+    },
+    {
+      "check": "guest password login",
+      "http": 200,
+      "message": "登录成功"
+    },
+    {
+      "check": "Token login preserves expiry",
+      "http": 200,
+      "message": "登录成功"
+    },
+    {
+      "check": "Create activity",
+      "http": 200,
+      "message": "活动创建成功"
+    },
+    {
+      "check": "Guest list",
+      "http": 200,
+      "message": "查询成功"
+    },
+    {
+      "check": "Non-owner edit rejected",
+      "http": 403,
+      "message": "无权操作其他用户的活动"
+    },
+    {
+      "check": "Registration success",
+      "http": 200,
+      "message": "报名成功"
+    },
+    {
+      "check": "Duplicate registration rejected",
+      "http": 409,
+      "message": "你已报名该活动"
+    },
+    {
+      "check": "Capacity exhausted",
+      "http": 409,
+      "message": "活动名额已满"
+    },
+    {
+      "check": "Owner cancel",
+      "http": 200,
+      "message": "活动已取消"
+    },
+    {
+      "check": "Cancelled activity rejects registration",
+      "http": 409,
+      "message": "活动已取消"
+    }
+  ]
+}

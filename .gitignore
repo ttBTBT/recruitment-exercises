@@ -1,0 +1,9 @@
+**/target/
+**/build/
+.env
+*.log
+!evidence/**/*.log
+.idea/
+*.iml
+data/
+/release/
